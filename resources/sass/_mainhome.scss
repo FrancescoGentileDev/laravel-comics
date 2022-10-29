@@ -1,0 +1,60 @@
+.main {
+    .jumbotron {
+        height: 450px;
+        background-image: url('/img/jumbotron.jpg');
+        background-attachment: fixed
+      }
+
+      section {
+        position: relative;
+        @include container;
+        color: white;
+      }
+      .badge {
+        position: absolute;
+        padding: 0.5rem 2rem;
+        top: 0;
+        transform: translateY(-50%);
+        background-color: $brand-color;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 2rem;
+      }
+
+      .grid {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: start;
+      }
+      .component {
+        text-transform: uppercase;
+      }
+
+      .comic {
+        aspect-ratio: 1 / 1;
+      }
+      .more
+       {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+              button {
+        background-color: $brand-color;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+       }
+
+}

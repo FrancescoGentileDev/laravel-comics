@@ -53,12 +53,12 @@ header .header-container nav a.active::after {
   background-color: #0282f9;
 }
 
-section {
+section.footers {
   background-color: #303030;
   z-index: 10;
 }
 
-section .upper-footer {
+section.footers .upper-footer {
   position: relative;
   background-image: url("/img/footer-bg.jpg");
   background-attachment: fixed;
@@ -66,7 +66,7 @@ section .upper-footer {
   height: 400px;
 }
 
-section .upper-footer .container {
+section.footers .upper-footer .container {
   height: 100%;
   max-width: 1300px;
   margin: 0 auto;
@@ -75,12 +75,12 @@ section .upper-footer .container {
   align-items: center;
 }
 
-section .upper-footer .container .link-section {
+section.footers .upper-footer .container .link-section {
   display: flex;
   flex-direction: row;
 }
 
-section .upper-footer .container .footer-jumbo {
+section.footers .upper-footer .container .footer-jumbo {
   align-self: flex-end;
   background-image: url("/img/dc-logo-bg.png");
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@ section .upper-footer .container .footer-jumbo {
   height: 100%;
 }
 
-section .down-footer {
+section.footers .down-footer {
   background-color: #303030;
   padding: 2rem;
   max-width: 1300px;
@@ -113,6 +113,68 @@ button {
   background-color: transparent;
   color: white;
   border: 2px solid #0282f9;
+}
+
+.main .jumbotron {
+  height: 450px;
+  background-image: url("/img/jumbotron.jpg");
+  background-attachment: fixed;
+}
+
+.main section {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  color: white;
+}
+
+.main .badge {
+  position: absolute;
+  padding: 0.5rem 2rem;
+  top: 0;
+  transform: translateY(-50%);
+  background-color: #0282f9;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.main .grid {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.main .component {
+  text-transform: uppercase;
+}
+
+.main .comic {
+  aspect-ratio: 1/1;
+}
+
+.main .more {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.main .more button {
+  background-color: #0282f9;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 * {

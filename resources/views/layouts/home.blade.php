@@ -1,16 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <title>DC comics</title>
-</head>
-<body>
-    @include("partials.header")
-    @yield("content")
-    @include("partials.footer")
+@extends('layouts.layout')
 
-</body>
-</html>
+@section('content')
+<div class="main">
+    <div class="jumbotron"></div>
+    <section class="cards-section">
+      <div class="badge">Current Series</div>
+      <div class="grid">
+        {{-- <image-and-text
+          class="component"
+          v-for="(item, index) in items"
+          :key="index"
+          :img="item.thumb"
+          :localImg="false"
+          :text="item.series"
+          :square="true"
+          size="200px"
+        /> --}}
+        @foreach ($comics as $comic)
+            <div class="comic">
+                <img src="{{$comic['thumb']}}" alt="" srcset="">
+                <p>{{$comic['title'] }}</p>
+            </div>
+        @endforeach
+      </div>
+    </section>
+    <div class="more">
+        <button>LOAD MORE</button>
+    </div>
+  </div>
+@endsection
