@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="main">
-    <div class="jumbotron"></div>
     <section class="cards-section">
       <div class="badge">Current Series</div>
       <div class="grid">

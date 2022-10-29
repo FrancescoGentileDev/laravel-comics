@@ -2,6 +2,7 @@
     <footer class="upper-footer">
       <div class="container">
         <div class="link-section">
+
         </div>
 
         <div class="footer-jumbo"></div>

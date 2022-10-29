@@ -1,22 +1,42 @@
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: GretaSens;
+    src: url('/fonts/GretaSansStd-Medium.woff2');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: GretaSens;
+    src: url('/fonts/GretaSansCondensedStd-Bold.woff2');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: GretaSens;
+    src: url('/fonts/GretaSansCondensedStd-SemiBold.woff2');
+    font-weight: 500;
+  }
 
-body {
+  body {
 
-  background-color: $text-color;
-  font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
+    background-color: $text-color;
+    font-family: GretaSens, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 
-a:hover,li:hover {
-  color: $brand-color !important;
-  cursor: pointer;
-}
+  a:hover,li:hover {
+    color: $brand-color !important;
+    cursor: pointer;
+  }
+
+
+.jumbotron {
+    height: 450px;
+    background-image: url('/img/jumbotron.jpg');
+    background-attachment: fixed
+  }

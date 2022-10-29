@@ -9,7 +9,9 @@
 </head>
 <body>
     @include("partials.header")
+    <div class="jumbotron"></div>
     @yield("content")
+    @include('partials.band')
     @include("partials.footer")
 
 </body>
