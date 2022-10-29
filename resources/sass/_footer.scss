@@ -17,6 +17,26 @@ section.footers {
         .link-section {
           display: flex;
           flex-direction: row;
+          gap: 2rem;
+          .link {
+            margin-top: 1rem;
+            h3 {
+                color: white
+
+            }
+            ul {
+                list-style: none;
+                li {
+                    a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        color: $brand-color;
+                    }
+                    }
+                }
+            }
+          }
         }
         .footer-jumbo {
           align-self: flex-end;
@@ -41,6 +61,20 @@ section.footers {
   .social {
     @include flex-center;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 2rem;
+        color: $brand-color;
+        margin-right: 1rem;
+    }
+    .social-icons {
+        img {
+            margin-right: 1rem;
+
+        }
+
+    }
   }
 
   button {

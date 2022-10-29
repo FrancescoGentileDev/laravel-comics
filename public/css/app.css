@@ -78,6 +78,28 @@ section.footers .upper-footer .container {
 section.footers .upper-footer .container .link-section {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
+}
+
+section.footers .upper-footer .container .link-section .link {
+  margin-top: 1rem;
+}
+
+section.footers .upper-footer .container .link-section .link h3 {
+  color: white;
+}
+
+section.footers .upper-footer .container .link-section .link ul {
+  list-style: none;
+}
+
+section.footers .upper-footer .container .link-section .link ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section.footers .upper-footer .container .link-section .link ul li a:hover {
+  color: #0282f9;
 }
 
 section.footers .upper-footer .container .footer-jumbo {
@@ -105,6 +127,18 @@ section.footers .down-footer {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.social span {
+  font-size: 2rem;
+  color: #0282f9;
+  margin-right: 1rem;
+}
+
+.social .social-icons img {
+  margin-right: 1rem;
 }
 
 button {
