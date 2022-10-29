@@ -1,0 +1,44 @@
+header {
+    background-color: $background;
+    font-family: sans-serif;
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: $max-width;
+      margin: 0 auto;
+      margin-top: 2rem;
+      padding: 1rem;
+
+      nav {
+        display: flex;
+        a {
+          color: $footer-color;
+          font-weight: bold;
+          font-size: 1.2rem;
+          text-decoration: none;
+          padding: 0.6rem;
+          text-transform: uppercase;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+        &.active {
+          color: $brand-color
+        }
+        &.active::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 10%;
+          text-align: center;
+          width: 80%;
+          height: 3px;
+          margin: 0 auto;
+          background-color: $brand-color;
+
+        }
+        }
+
+      }
+    }
+  }

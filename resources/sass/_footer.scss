@@ -1,0 +1,52 @@
+section {
+    background-color: $footer-color;
+
+    z-index: 10;
+
+    .upper-footer {
+      position: relative;
+      background-image: url("/img/footer-bg.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      height: 400px;
+
+      .container {
+        height: 100%;
+        @include container;
+        @include flex-center;
+        .link-section {
+          display: flex;
+          flex-direction: row;
+        }
+        .footer-jumbo {
+          align-self: flex-end;
+          background-image: url("/img/dc-logo-bg.png");
+          background-repeat: no-repeat;
+          background-color: transparent;
+          background-position-y: -50px;
+          width: 50%;
+          height: 100%;
+        }
+      }
+    }
+
+    .down-footer {
+      background-color: $footer-color;
+      padding: 2rem;
+      @include container;
+      @include flex-center;
+    }
+  }
+
+  .social {
+    @include flex-center;
+    font-weight: bold;
+  }
+
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid $brand-color;
+  }

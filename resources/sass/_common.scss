@@ -1,0 +1,22 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: $text-color;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+a:hover,li:hover {
+  color: $brand-color !important;
+  cursor: pointer;
+}

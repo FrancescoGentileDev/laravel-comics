@@ -1,0 +1,25 @@
+
+/***** COLORS *****/
+$brand-color: #0282f9;
+$brand-color-secondary: #11538c;
+$background: #fff;
+$text-color: #1C1C1C;
+$footer-color: #303030;
+/***** End COLORS *****/
+
+
+
+/***** SIZES *****/
+$max-width: 1300px;
+@mixin container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+/***** End SIZES *****/
